@@ -1,0 +1,1 @@
+su - postgres -c "pgbench -f '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/TOAST/PlainSelect.sql'"

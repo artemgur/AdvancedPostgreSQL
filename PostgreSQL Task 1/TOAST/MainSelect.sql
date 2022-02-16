@@ -1,0 +1,1 @@
+SELECT * FROM toast_plain;
