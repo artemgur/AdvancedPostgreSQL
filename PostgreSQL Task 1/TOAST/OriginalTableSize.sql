@@ -10,4 +10,4 @@ FROM pg_class class
 					ON usr.oid = class.relowner
 		 LEFT JOIN pg_tablespace tblsp
 				   ON tblsp.oid = class.reltablespace
-WHERE relname = 'toast_plain' OR relname = 'toast_extended' OR relname = 'toast_external' OR relname = 'toast_main'
+WHERE relname IN ('toast_plain', 'toast_extended', 'toast_external', 'toast_main')
