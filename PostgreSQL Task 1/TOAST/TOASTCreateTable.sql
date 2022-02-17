@@ -10,7 +10,7 @@ CREATE TABLE toast_extended (
 	text text
 );
 
-ALTER TABLE toast_plain ALTER COLUMN text SET STORAGE EXTENDED;
+ALTER TABLE toast_extended ALTER COLUMN text SET STORAGE EXTENDED;
 
 CREATE TABLE toast_external (
 	id serial PRIMARY KEY,
