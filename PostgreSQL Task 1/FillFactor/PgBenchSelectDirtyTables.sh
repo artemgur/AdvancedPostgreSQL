@@ -3,5 +3,5 @@
 # -f выполнить скрипт из файла
 echo postgres | su - postgres -c "psql -f '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/FillFactor/FillFactorCleanup.sql'"
 echo postgres | su - postgres -c "psql -f '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/FillFactor/FillFactorInsert.sql'"
-echo postgres | su - postgres -c "psql -f '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/FillFactor/PgBenchUpdate.sql'"
-echo postgres | su - postgres -c "pgbench -t 1000 -rf '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/FillFactor/PgBenchSelect.sql'"
+echo postgres | su - postgres -c "psql -f '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/FillFactor/PgBenchUpdateNoClean.sql'"
+echo postgres | su - postgres -c "pgbench -t 1000 -nrf '/home/artemgur/Git/GitHub/AdvancedPostgreSQL/PostgreSQL Task 1/FillFactor/PgBenchSelect.sql'"
