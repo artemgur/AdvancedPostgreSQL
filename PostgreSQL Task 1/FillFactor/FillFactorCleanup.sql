@@ -1,4 +1,1 @@
-DELETE FROM fillfactor50 WHERE TRUE;
-DELETE FROM fillfactor75 WHERE TRUE;
-DELETE FROM fillfactor90 WHERE TRUE;
-DELETE FROM fillfactor100 WHERE TRUE;
+TRUNCATE fillfactor50, fillfactor75, fillfactor90, fillfactor100;
