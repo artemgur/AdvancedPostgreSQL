@@ -1,11 +1,11 @@
 CREATE TABLE logged (
-    id bigint PRIMARY KEY,
+    id bigserial PRIMARY KEY,
     time timestamp,
-    string varchar(64)
+    string char(10)
 );
 
 CREATE UNLOGGED TABLE unlogged (
-    id bigint PRIMARY KEY,
+    id bigserial PRIMARY KEY,
     time timestamp,
     string char(10)
 );

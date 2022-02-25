@@ -1,0 +1,1 @@
+CREATE SEQUENCE pgbench_sequence START 1

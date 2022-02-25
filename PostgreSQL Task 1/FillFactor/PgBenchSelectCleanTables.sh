@@ -4,4 +4,4 @@
 echo postgres | su postgres -c "
 psql -f 'FillFactorCleanup.sql'
 psql -f 'FillFactorInsert.sql'
-pgbench -t 1000 -rf 'PgBenchSelect.sql'"
+pgbench -t 1000 -nrf 'PgBenchSelect.sql'"

@@ -1,0 +1,1 @@
+DROP SEQUENCE pgbench_sequence
