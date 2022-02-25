@@ -1,1 +1,0 @@
-Files in this directory should be in flyway-x.y.z/sql/
