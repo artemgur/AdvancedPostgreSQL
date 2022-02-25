@@ -3,6 +3,4 @@
 --\set dsfljk debug(:sdf)
 --SELECT :client_id FROM fillfactor50 LIMIT 1
 
-UPDATE logged
-	SET time = clock_timestamp()
-	WHERE id=nextval('pgbench_sequence')
+DELETE FROM logged WHERE id=nextval('pgbench_sequence')
