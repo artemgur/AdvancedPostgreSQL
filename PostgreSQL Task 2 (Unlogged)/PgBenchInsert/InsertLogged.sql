@@ -1,1 +1,1 @@
-INSERT INTO logged (time, string, flag) VALUES (clock_timestamp(), 'string_123', FALSE)
+INSERT INTO logged (time, string) VALUES (clock_timestamp(), 'string_123')

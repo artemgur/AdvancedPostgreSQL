@@ -10,5 +10,6 @@
 
 --TODO
 UPDATE unlogged
-	SET time = clock_timestamp()
-	WHERE id=1--nextval('pgbench_sequence')
+	--SET time = clock_timestamp()
+	SET string = '1234567890'
+	WHERE id=nextval('pgbench_sequence')

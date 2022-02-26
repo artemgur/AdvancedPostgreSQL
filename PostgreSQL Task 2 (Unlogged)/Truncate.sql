@@ -1,1 +1,1 @@
-TRUNCATE logged, unlogged
+TRUNCATE logged, unlogged RESTART IDENTITY
