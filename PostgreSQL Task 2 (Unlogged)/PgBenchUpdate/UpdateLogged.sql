@@ -12,4 +12,4 @@ WITH counter AS (SELECT nextval('pgbench_sequence') AS a)
 UPDATE logged
 	--SET time = clock_timestamp()
 	SET string = '1234567890'
-	WHERE EXISTS (SELECT * FROM counter WHERE a=id) --TODO likely there is a better way
+	WHERE EXISTS (SELECT a FROM counter WHERE a=id) --TODO likely there is a better way
