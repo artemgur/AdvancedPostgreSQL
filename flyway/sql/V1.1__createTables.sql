@@ -1,3 +1,5 @@
+-- Task 2 (Unlogged)
+
 CREATE TABLE logged (
     id bigserial PRIMARY KEY,
     time timestamp,

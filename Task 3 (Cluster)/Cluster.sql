@@ -1,0 +1,1 @@
+CLUSTER VERBOSE task3 USING task3_pkey
