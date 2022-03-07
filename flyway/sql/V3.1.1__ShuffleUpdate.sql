@@ -10,4 +10,5 @@ BEGIN
 	        WHERE id BETWEEN random_value AND random_value + batch_size;
 	END LOOP;
 END;
-$$
+$$;
+VACUUM FULL task3;
