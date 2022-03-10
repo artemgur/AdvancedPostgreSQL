@@ -5,9 +5,8 @@ BEGIN
 	FOR i in 1..20000 LOOP
 	    random_value := floor(random() * 10000 + 1);
 		UPDATE task3
-	        SET name = md5(cast(random_value AS text))
+	        SET name = md5(cast(random_value * 2 AS text))
 	        WHERE id = random_value;
 	END LOOP;
 END;
 $$;
-VACUUM ANALYZE FULL task3;

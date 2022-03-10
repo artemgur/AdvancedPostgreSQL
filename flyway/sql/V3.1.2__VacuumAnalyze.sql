@@ -1,0 +1,1 @@
+VACUUM (ANALYZE, FULL) task3;
