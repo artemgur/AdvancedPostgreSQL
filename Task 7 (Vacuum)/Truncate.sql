@@ -1,0 +1,1 @@
+TRUNCATE no_autovacuum RESTART IDENTITY
