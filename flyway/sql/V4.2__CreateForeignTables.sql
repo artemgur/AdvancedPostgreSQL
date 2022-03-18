@@ -20,5 +20,3 @@ CREATE FOREIGN TABLE table3(
     id serial,
     name varchar(32)
 ) SERVER server1 OPTIONS (schema_name 'schema3', table_name 'table3');
-
-
