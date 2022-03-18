@@ -1,0 +1,1 @@
+VACUUM no_autovacuum
