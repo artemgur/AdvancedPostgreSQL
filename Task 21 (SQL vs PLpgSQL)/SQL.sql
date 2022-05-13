@@ -1,0 +1,3 @@
+CREATE OR REPLACE FUNCTION abc_sql(x int) RETURNS int AS $$
+	SELECT b FROM abc WHERE a = x LIMIT 1;
+$$ LANGUAGE sql
