@@ -1,1 +1,1 @@
-pgbench -U postgres -t 100000 -nc 1 -f PgBenchSQL.sql
+pgbench -U postgres -T 300 -nc 10 -f PgBenchSQL.sql
