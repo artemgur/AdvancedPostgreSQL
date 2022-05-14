@@ -1,14 +1,17 @@
-CREATE TABLE sb_10e3 (
+CREATE TABLE sb_1000 (
     a int,
-    b int
+    b int,
+    c int
 );
 
-CREATE TABLE sb_10e4 (
+CREATE TABLE sb_10000 (
     a int,
-    b int
+    b int,
+    c int
 );
 
-CREATE TABLE sb_10e5 (
+CREATE TABLE sb_100000 (
     a int,
-    b int
+    b int,
+    c int
 );
