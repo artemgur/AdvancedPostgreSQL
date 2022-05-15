@@ -1,0 +1,1 @@
+SELECT pg_size_pretty(sum(buffered)) FROM buffer_view
