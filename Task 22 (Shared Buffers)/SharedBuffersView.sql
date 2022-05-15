@@ -14,7 +14,6 @@ SELECT c.relname,
              pg_relation_size(c.oid), 1) AS percent_of_relation,
        round(100.0 * count(*) * current_setting('block_size')::integer /
              pg_table_size(c.oid), 1) AS percent_of_table
-       --pg_size_pretty(sum(c.relname)) AS total_buffered
 FROM pg_class c
 	     INNER JOIN pg_buffercache b
 	                ON b.relfilenode = pg_relation_filenode(c.oid)

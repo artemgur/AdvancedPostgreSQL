@@ -1,0 +1,1 @@
+SELECT current_setting('shared_buffers') AS shared_buffers_max_size

@@ -1,1 +1,2 @@
-SELECT pg_size_pretty(sum(buffered)) FROM buffer_view
+SELECT pg_size_pretty(sum(buffered)) AS buffered_total
+FROM buffer_view
