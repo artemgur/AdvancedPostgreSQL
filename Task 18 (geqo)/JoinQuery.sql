@@ -1,7 +1,9 @@
 SELECT * FROM abc
-JOIN sb_1000 ON abc.a = sb_1000.a
+JOIN abc abc1 ON abc.a = abc1.b
 JOIN abc abc2 ON abc.b = abc2.c
-JOIN sb_10000 ON abc.a = sb_10000.c
-JOIN sb_100000 ON abc.c = sb_100000.c
-JOIN sb_1000 s ON abc.c = s.b
-JOIN task3 ON abc.b = task3.id
+JOIN sb_1000 ON abc.a = sb_1000.c
+JOIN sb_1000 s1 ON abc.c = s1.b
+JOIN task3 ON sb_1000.a = task3.id
+JOIN sb_1000 s2 ON abc2.b = s2.b
+JOIN task3 t ON abc.b = t.id
+LIMIT 50
